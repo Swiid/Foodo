@@ -8,22 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		003421E01CD40A13006FDE7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003421DF1CD40A13006FDE7F /* AppDelegate.swift */; };
-		003421E21CD40A13006FDE7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003421E11CD40A13006FDE7F /* ViewController.swift */; };
 		003421E51CD40A13006FDE7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 003421E31CD40A13006FDE7F /* Main.storyboard */; };
 		003421E81CD40A13006FDE7F /* Foodos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 003421E61CD40A13006FDE7F /* Foodos.xcdatamodeld */; };
 		003421EA1CD40A13006FDE7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 003421E91CD40A13006FDE7F /* Assets.xcassets */; };
 		003421ED1CD40A13006FDE7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 003421EB1CD40A13006FDE7F /* LaunchScreen.storyboard */; };
+		003421FA1CD40AA4006FDE7F /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 003421F91CD40AA4006FDE7F /* LoginVC.swift */; };
+		003421FC1CD40ADE006FDE7F /* Coffee At Midnight Demo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 003421FB1CD40ADE006FDE7F /* Coffee At Midnight Demo.ttf */; };
+		003422011CD40B06006FDE7F /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 003421FD1CD40B06006FDE7F /* Roboto-Black.ttf */; };
+		003422021CD40B06006FDE7F /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 003421FE1CD40B06006FDE7F /* Roboto-Bold.ttf */; };
+		003422031CD40B06006FDE7F /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 003421FF1CD40B06006FDE7F /* Roboto-Regular.ttf */; };
+		003422041CD40B06006FDE7F /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 003422001CD40B06006FDE7F /* Roboto-Thin.ttf */; };
+		00ACB6E21CD415C800793E81 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ACB6E11CD415C800793E81 /* Constants.swift */; };
+		00ACB6E41CD4161300793E81 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ACB6E31CD4161300793E81 /* MaterialButton.swift */; };
+		00ACB6E61CD4163D00793E81 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ACB6E51CD4163D00793E81 /* MaterialTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		003421DC1CD40A12006FDE7F /* Foodos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		003421DF1CD40A13006FDE7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		003421E11CD40A13006FDE7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		003421E41CD40A13006FDE7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		003421E71CD40A13006FDE7F /* Foodos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Foodos.xcdatamodel; sourceTree = "<group>"; };
 		003421E91CD40A13006FDE7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		003421EC1CD40A13006FDE7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		003421EE1CD40A13006FDE7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		003421F91CD40AA4006FDE7F /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		003421FB1CD40ADE006FDE7F /* Coffee At Midnight Demo.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Coffee At Midnight Demo.ttf"; sourceTree = "<group>"; };
+		003421FD1CD40B06006FDE7F /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		003421FE1CD40B06006FDE7F /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		003421FF1CD40B06006FDE7F /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		003422001CD40B06006FDE7F /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		00ACB6E11CD415C800793E81 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		00ACB6E31CD4161300793E81 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
+		00ACB6E51CD4163D00793E81 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,8 +72,12 @@
 		003421DE1CD40A13006FDE7F /* Foodos */ = {
 			isa = PBXGroup;
 			children = (
+				003421F81CD40A81006FDE7F /* Util */,
+				003421F71CD40A76006FDE7F /* Resources */,
+				003421F61CD40A6E006FDE7F /* Model */,
+				003421F51CD40A68006FDE7F /* View */,
+				003421F41CD40A60006FDE7F /* Controller */,
 				003421DF1CD40A13006FDE7F /* AppDelegate.swift */,
-				003421E11CD40A13006FDE7F /* ViewController.swift */,
 				003421E31CD40A13006FDE7F /* Main.storyboard */,
 				003421E91CD40A13006FDE7F /* Assets.xcassets */,
 				003421EB1CD40A13006FDE7F /* LaunchScreen.storyboard */,
@@ -65,6 +85,50 @@
 				003421E61CD40A13006FDE7F /* Foodos.xcdatamodeld */,
 			);
 			path = Foodos;
+			sourceTree = "<group>";
+		};
+		003421F41CD40A60006FDE7F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				003421F91CD40AA4006FDE7F /* LoginVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		003421F51CD40A68006FDE7F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				00ACB6E31CD4161300793E81 /* MaterialButton.swift */,
+				00ACB6E51CD4163D00793E81 /* MaterialTextField.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		003421F61CD40A6E006FDE7F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		003421F71CD40A76006FDE7F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				003421FD1CD40B06006FDE7F /* Roboto-Black.ttf */,
+				003421FE1CD40B06006FDE7F /* Roboto-Bold.ttf */,
+				003421FF1CD40B06006FDE7F /* Roboto-Regular.ttf */,
+				003422001CD40B06006FDE7F /* Roboto-Thin.ttf */,
+				003421FB1CD40ADE006FDE7F /* Coffee At Midnight Demo.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		003421F81CD40A81006FDE7F /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				00ACB6E11CD415C800793E81 /* Constants.swift */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +163,7 @@
 				TargetAttributes = {
 					003421DB1CD40A12006FDE7F = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = FY29YMQ23X;
 					};
 				};
 			};
@@ -125,7 +190,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				003422041CD40B06006FDE7F /* Roboto-Thin.ttf in Resources */,
 				003421ED1CD40A13006FDE7F /* LaunchScreen.storyboard in Resources */,
+				003422031CD40B06006FDE7F /* Roboto-Regular.ttf in Resources */,
+				003421FC1CD40ADE006FDE7F /* Coffee At Midnight Demo.ttf in Resources */,
+				003422021CD40B06006FDE7F /* Roboto-Bold.ttf in Resources */,
+				003422011CD40B06006FDE7F /* Roboto-Black.ttf in Resources */,
 				003421EA1CD40A13006FDE7F /* Assets.xcassets in Resources */,
 				003421E51CD40A13006FDE7F /* Main.storyboard in Resources */,
 			);
@@ -138,9 +208,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				003421E21CD40A13006FDE7F /* ViewController.swift in Sources */,
+				00ACB6E61CD4163D00793E81 /* MaterialTextField.swift in Sources */,
 				003421E81CD40A13006FDE7F /* Foodos.xcdatamodeld in Sources */,
 				003421E01CD40A13006FDE7F /* AppDelegate.swift in Sources */,
+				003421FA1CD40AA4006FDE7F /* LoginVC.swift in Sources */,
+				00ACB6E21CD415C800793E81 /* Constants.swift in Sources */,
+				00ACB6E41CD4161300793E81 /* MaterialButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,6 +328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Foodos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JacquesWud.Foodos;
@@ -266,6 +340,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = Foodos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.JacquesWud.Foodos;
@@ -292,6 +367,7 @@
 				003421F31CD40A13006FDE7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

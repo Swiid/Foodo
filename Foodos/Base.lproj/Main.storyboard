@@ -96,6 +96,9 @@
                                 <state key="normal" title="Login">
                                     <color key="titleColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="attempLogin:" destination="3bd-v0-Ldd" eventType="touchUpInside" id="5Kk-37-XkU"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HorizontalLines" translatesAutoresizingMaskIntoConstraints="NO" id="byt-nm-0FS">
                                 <rect key="frame" x="0.0" y="519" width="375" height="21"/>
@@ -114,6 +117,9 @@
                                 <state key="normal" title="Facebook Login">
                                     <color key="titleColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="fbBtnPressed:" destination="3bd-v0-Ldd" eventType="touchUpInside" id="EuJ-UK-eUe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -147,17 +153,19 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <segue destination="mov-eI-86a" kind="presentation" id="TrB-He-RoV"/>
+                        <outlet property="emailField" destination="pPh-dZ-MMA" id="2iH-bf-RE9"/>
+                        <outlet property="passwordField" destination="JNl-Y1-ZKd" id="TMF-6p-kGx"/>
+                        <segue destination="mov-eI-86a" kind="presentation" identifier="loggedIn" id="TrB-He-RoV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YZX-49-UCY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="326.5" y="402.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Home ScreenVC-->
         <scene sceneID="ALP-IJ-OTT">
             <objects>
-                <viewController id="mov-eI-86a" sceneMemberID="viewController">
+                <viewController id="mov-eI-86a" customClass="HomeScreenVC" customModule="Foodos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="MnG-Ve-HFI"/>
                         <viewControllerLayoutGuide type="bottom" id="0g0-Kk-wDD"/>

@@ -17,6 +17,7 @@ let KEY_UID = "uid"
 // Segues
 let SEGUE_LOGGED_IN = "loggedIn"
 let SEGUE_LEFTSIDE_MENU = "segueToLeftSideMenu"
+let SEGUE_PROFILE_DETAIL = "segueToProfileDetailVC"
 
 // Status codes
 let INVALID_EMAIL = -5

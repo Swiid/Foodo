@@ -14,29 +14,33 @@ class ProfileDetailVC: UIViewController {
     @IBOutlet weak var nameTextfield: UITextField!
     @IBOutlet weak var lastnameTextfield: UITextField!
     @IBOutlet weak var emailTextfield: UITextField!
+    @IBOutlet weak var saveProfileBtn: UIButton!
     
-    @IBOutlet weak var userDetailLbls: UIStackView!
-    @IBOutlet weak var userDetailEditfields: UIStackView!
+    @IBOutlet weak var userEditTextfields: UIStackView!
+    
     
     var user = [User]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        showEditTextfields()
+        
         
     }
-    func showEditTextfields() {
-        userDetailLbls.hidden = false
-        userNameTextfield.hidden = true
+    func showUserEditfields() {
+        userEditTextfields.hidden = false
+        saveProfileBtn.hidden = false
     }
-    func hideEditTextfields() {
-        userDetailLbls.hidden = true
-        userNameTextfield.hidden = false
-    }
-
     @IBAction func editBtnTapped(sender: UIButton) {
-        hideEditTextfields()
+        showUserEditfields()
+        
+    }
+    @IBAction func attempUserEditSave(sender: AnyObject) {
+        
+        
+    }
+    @IBAction func backBtnTapped(sender: UIButton!) {
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 
 }

@@ -58,7 +58,7 @@ class LoginVC: UIViewController {
                                 NSUserDefaults.standardUserDefaults().setValue(result [KEY_UID], forKey: KEY_UID)
                                 DataServicesFirebase.ds.REF_BASE.authUser(email, password: pwd, withCompletionBlock: { err, authData in
                                     
-                                    let user = ["provider": authData.provider!]
+                                    let user = ["provider": authData.provider!, "email":"\(email)"]
                                     DataServicesFirebase.ds.createFirebaseUser(KEY_UID, user: user)
                                 })
                                 self.performSegueWithIdentifier(SEGUE_LOGGED_IN, sender: nil)
@@ -74,7 +74,7 @@ class LoginVC: UIViewController {
                 }
             })
         } else {
-            showErrorAlert("Email and password required", msg: "You must email and a password")
+            showErrorAlert("Email and password required", msg: "You must enter a vailed email or password")
         }
         
     }

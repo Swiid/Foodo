@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "1x",
+      "filename" : "MyRecipies.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x",
+      "filename" : "MyRecipies@2x.png"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x",
+      "filename" : "MyRecipies@3x.png"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "silver-ux"
+  }
+}

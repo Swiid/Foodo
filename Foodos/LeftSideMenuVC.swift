@@ -11,17 +11,15 @@ import SideMenu
 
 class LeftSideMenuVC: UITableViewController {
     
-    let sideMenuTitles = ["Profile","My Recipies","Meal Planner","Grocery List"]
+    var sideMenuTitles = [String]()
+    var selectedMenu = [String]()
     
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        sideMenuTitles = ["Profile","My Recipies","Meal Planner","Grocery List"]
+        
     }
 
     // MARK: - Table view data source
@@ -39,10 +37,9 @@ class LeftSideMenuVC: UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
        if let cell = tableView.dequeueReusableCellWithIdentifier("LeftMenuCell", forIndexPath: indexPath) as? LeftMenuCell {
-
+        
         // Configure the cell...
         cell.configureMenuCell(sideMenuTitles[indexPath.row])
-
         return cell
     
        } else {
@@ -50,12 +47,9 @@ class LeftSideMenuVC: UITableViewController {
         }
     }
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+
         
-        sideMenuTitles[indexPath.row]
-        performSegueWithIdentifier(SEGUE_PROFILE_DETAIL, sender: nil)
     }
-    
-    
     
     
 }

@@ -26,7 +26,7 @@ class ProfileDetailVC: UIViewController {
     
     
     var user: userProfile!
-   
+    var profileRecived: LeftSideMenuVC!
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -32,6 +32,7 @@
 		00E290F71CD535C20074317F /* ProfileDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E290F61CD535C20074317F /* ProfileDetailVC.swift */; };
 		00E290FB1CD669A60074317F /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E290FA1CD669A60074317F /* UserProfile.swift */; };
 		00E290FD1CD69C2F0074317F /* MyRecipesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E290FC1CD69C2F0074317F /* MyRecipesVC.swift */; };
+		00E290FF1CD6A5290074317F /* MyRecipesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E290FE1CD6A5290074317F /* MyRecipesCell.swift */; };
 		217E59BCB4665D007FA28265 /* Pods_Foodos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75C5A93EBF762818BFF500C /* Pods_Foodos.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +64,7 @@
 		00E290F61CD535C20074317F /* ProfileDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDetailVC.swift; sourceTree = "<group>"; };
 		00E290FA1CD669A60074317F /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		00E290FC1CD69C2F0074317F /* MyRecipesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRecipesVC.swift; sourceTree = "<group>"; };
+		00E290FE1CD6A5290074317F /* MyRecipesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRecipesCell.swift; sourceTree = "<group>"; };
 		0EBDE1F0231D4C2CF137CC94 /* Pods-Foodos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Foodos/Pods-Foodos.release.xcconfig"; sourceTree = "<group>"; };
 		DE6A0950FBAE5C1A3089BDE0 /* Pods-Foodos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Foodos/Pods-Foodos.debug.xcconfig"; sourceTree = "<group>"; };
 		F75C5A93EBF762818BFF500C /* Pods_Foodos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foodos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +141,7 @@
 				00ACB6E51CD4163D00793E81 /* MaterialTextField.swift */,
 				00E290EE1CD524470074317F /* LeftMenuCell.swift */,
 				00E290F01CD526300074317F /* MaterialViewMenuCell.swift */,
+				00E290FE1CD6A5290074317F /* MyRecipesCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00ACB6E61CD4163D00793E81 /* MaterialTextField.swift in Sources */,
+				00E290FF1CD6A5290074317F /* MyRecipesCell.swift in Sources */,
 				003421E81CD40A13006FDE7F /* Foodos.xcdatamodeld in Sources */,
 				003421E01CD40A13006FDE7F /* AppDelegate.swift in Sources */,
 				003421FA1CD40AA4006FDE7F /* LoginVC.swift in Sources */,

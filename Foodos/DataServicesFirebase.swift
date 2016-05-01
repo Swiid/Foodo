@@ -16,7 +16,7 @@ class DataServicesFirebase {
     static let ds = DataServicesFirebase()
     
     private var _REF_BASE = Firebase(url: "\(URL_BASE)")
-    private var _REF_USERs = Firebase(url: "\(URL_BASE)/users")
+    private var _REF_USERS = Firebase(url: "\(URL_BASE)/users")
     private var _REF_RECIPES = Firebase(url: "\(URL_BASE)/recipes")
     
     var REF_RECIPES: Firebase {
@@ -25,12 +25,13 @@ class DataServicesFirebase {
     var REF_BASE: Firebase {
         return _REF_BASE
     }
-    var REF_USER: Firebase {
-        return _REF_USERs
+    var REF_USERS: Firebase {
+        return _REF_USERS
     }
     func createFirebaseUser(uid: String, user: Dictionary<String, String>) {
-        REF_USER.childByAppendingPath(uid).setValue(user)
+        REF_USERS.childByAppendingPath(uid).setValue(user)
     }
+    
     
     
 }

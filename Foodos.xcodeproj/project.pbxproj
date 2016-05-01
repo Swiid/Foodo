@@ -29,8 +29,9 @@
 		00E290ED1CD523BE0074317F /* LeftSideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E290EC1CD523BE0074317F /* LeftSideMenuVC.swift */; };
 		00E290EF1CD524470074317F /* LeftMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E290EE1CD524470074317F /* LeftMenuCell.swift */; };
 		00E290F11CD526300074317F /* MaterialViewMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E290F01CD526300074317F /* MaterialViewMenuCell.swift */; };
-		00E290F51CD5323B0074317F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E290F41CD5323B0074317F /* User.swift */; };
 		00E290F71CD535C20074317F /* ProfileDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E290F61CD535C20074317F /* ProfileDetailVC.swift */; };
+		00E290FB1CD669A60074317F /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E290FA1CD669A60074317F /* UserProfile.swift */; };
+		00E290FD1CD69C2F0074317F /* MyRecipesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E290FC1CD69C2F0074317F /* MyRecipesVC.swift */; };
 		217E59BCB4665D007FA28265 /* Pods_Foodos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F75C5A93EBF762818BFF500C /* Pods_Foodos.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,8 +60,9 @@
 		00E290EC1CD523BE0074317F /* LeftSideMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideMenuVC.swift; sourceTree = "<group>"; };
 		00E290EE1CD524470074317F /* LeftMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuCell.swift; sourceTree = "<group>"; };
 		00E290F01CD526300074317F /* MaterialViewMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialViewMenuCell.swift; sourceTree = "<group>"; };
-		00E290F41CD5323B0074317F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		00E290F61CD535C20074317F /* ProfileDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDetailVC.swift; sourceTree = "<group>"; };
+		00E290FA1CD669A60074317F /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		00E290FC1CD69C2F0074317F /* MyRecipesVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRecipesVC.swift; sourceTree = "<group>"; };
 		0EBDE1F0231D4C2CF137CC94 /* Pods-Foodos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Foodos/Pods-Foodos.release.xcconfig"; sourceTree = "<group>"; };
 		DE6A0950FBAE5C1A3089BDE0 /* Pods-Foodos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Foodos/Pods-Foodos.debug.xcconfig"; sourceTree = "<group>"; };
 		F75C5A93EBF762818BFF500C /* Pods_Foodos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foodos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +127,7 @@
 				00E290F91CD535D50074317F /* HomeVC */,
 				003421F91CD40AA4006FDE7F /* LoginVC.swift */,
 				00E290F61CD535C20074317F /* ProfileDetailVC.swift */,
+				00E290FC1CD69C2F0074317F /* MyRecipesVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -143,7 +146,7 @@
 		003421F61CD40A6E006FDE7F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				00E290F41CD5323B0074317F /* User.swift */,
+				00E290FA1CD669A60074317F /* UserProfile.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -344,15 +347,16 @@
 				003421E81CD40A13006FDE7F /* Foodos.xcdatamodeld in Sources */,
 				003421E01CD40A13006FDE7F /* AppDelegate.swift in Sources */,
 				003421FA1CD40AA4006FDE7F /* LoginVC.swift in Sources */,
+				00E290FD1CD69C2F0074317F /* MyRecipesVC.swift in Sources */,
 				00E290F71CD535C20074317F /* ProfileDetailVC.swift in Sources */,
 				00ACB6E21CD415C800793E81 /* Constants.swift in Sources */,
 				00ACB6E41CD4161300793E81 /* MaterialButton.swift in Sources */,
 				00E290E91CD50FA70074317F /* DataServicesFirebase.swift in Sources */,
 				00E290EF1CD524470074317F /* LeftMenuCell.swift in Sources */,
-				00E290F51CD5323B0074317F /* User.swift in Sources */,
 				00E290ED1CD523BE0074317F /* LeftSideMenuVC.swift in Sources */,
 				00E290F11CD526300074317F /* MaterialViewMenuCell.swift in Sources */,
 				00E290EB1CD518940074317F /* HomeScreenVC.swift in Sources */,
+				00E290FB1CD669A60074317F /* UserProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

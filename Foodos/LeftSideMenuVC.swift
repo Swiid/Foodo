@@ -52,7 +52,7 @@ class LeftSideMenuVC: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
         sideMenuTitles[indexPath.row]
-        performSegueWithIdentifier(SEGUE_PROFILE_DETAIL, sender: sideMenuTitles[indexPath.row])
+        performSegueWithIdentifier(SEGUE_PROFILE_DETAIL, sender: nil)
     }
     
     

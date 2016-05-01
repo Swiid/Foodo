@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ProfileDetailVC: UIViewController {
     
@@ -18,15 +19,35 @@ class ProfileDetailVC: UIViewController {
     
     @IBOutlet weak var userEditTextfields: UIStackView!
     
+    @IBOutlet weak var usernameLbl: UILabel!
+    @IBOutlet weak var firstnameLbl: UILabel!
+    @IBOutlet weak var lastnameLbl: UILabel!
+    @IBOutlet weak var emailLbl: UILabel!
     
-    var user = [User]()
+    
+    var user: userProfile!
+   
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        usernameLbl.text = ""
+        firstnameLbl.text = ""
+        lastnameLbl.text = ""
         
+        initObserver()
         
     }
+    
+    func initObserver() {
+        DataServicesFirebase.ds.REF_USERS.observeEventType(.ChildChanged, withBlock: { snapshot in
+            
+            let name = snapshot.value.objectForKey("name") as? String
+            print("The user has updated his name to \(name)")
+            
+        })
+    }
+  
     func showUserEditfields() {
         userEditTextfields.hidden = false
         saveProfileBtn.hidden = false
@@ -37,10 +58,28 @@ class ProfileDetailVC: UIViewController {
     }
     @IBAction func attempUserEditSave(sender: AnyObject) {
         
+        updateFirebaseUser()
         
     }
     @IBAction func backBtnTapped(sender: UIButton!) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-
+    
+    func updateFirebaseUser() {
+        
+        let users: Dictionary<String, AnyObject> = [
+            "name":nameTextfield.text!,
+            "lastname":lastnameTextfield.text!,
+            "email":emailTextfield.text!,
+            "username":userNameTextfield.text!
+            ]
+            let updateUser = DataServicesFirebase.ds.REF_USERS.childByAppendingPath(KEY_UID)
+            updateUser.updateChildValues(users)
+        
+        
+    }
+        
+        
+ 
+    
 }

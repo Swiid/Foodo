@@ -294,11 +294,30 @@
                     <navigationItem key="navigationItem" title="Menu" id="Rcf-JP-sBH"/>
                     <connections>
                         <segue destination="taf-R1-t8q" kind="presentation" identifier="segueToProfileDetailVC" id="koz-AC-QI1"/>
+                        <segue destination="usd-0Q-w6h" kind="presentation" id="tEB-Qf-tpq"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rhz-IR-mXX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1836.5" y="-374.5"/>
+            <point key="canvasLocation" x="1825.5" y="-374.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="t26-s8-aA6">
+            <objects>
+                <viewController id="usd-0Q-w6h" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wGQ-hy-sVR"/>
+                        <viewControllerLayoutGuide type="bottom" id="V2N-iY-t69"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OgB-1D-L5n">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p3l-1a-fE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2333.5" y="-55.5"/>
         </scene>
         <!--Profile DetailVC-->
         <scene sceneID="RMw-W4-ZOq">
@@ -484,12 +503,16 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="emailLbl" destination="W3F-ED-47K" id="jQv-T4-n1F"/>
                         <outlet property="emailTextfield" destination="9vM-8t-Wqx" id="eME-uU-GQd"/>
+                        <outlet property="firstnameLbl" destination="vmr-YW-gDp" id="WId-bm-40K"/>
+                        <outlet property="lastnameLbl" destination="rSk-DY-tzI" id="5vh-VS-7Ue"/>
                         <outlet property="lastnameTextfield" destination="VaL-DB-6nZ" id="hD2-8R-Mzo"/>
                         <outlet property="nameTextfield" destination="3Dd-Ly-RWG" id="4WZ-pu-owS"/>
                         <outlet property="saveProfileBtn" destination="h53-ki-IjT" id="z6P-oB-4SX"/>
                         <outlet property="userEditTextfields" destination="IuJ-PD-S0v" id="EGD-cj-dsi"/>
                         <outlet property="userNameTextfield" destination="6Sx-5P-lGd" id="a7G-49-RTt"/>
+                        <outlet property="usernameLbl" destination="hY0-yo-XVy" id="raa-Cu-mRm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NVj-Lr-fPy" userLabel="First Responder" sceneMemberID="firstResponder"/>

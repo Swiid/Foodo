@@ -14,9 +14,9 @@ class MyRecipesCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
-    func configureRecipeCell(img: UIImage) {
+    func configureRecipeCell(img: String) {
         
         recipeListImg.image = UIImage(named: "\(img)")
         

@@ -11,6 +11,9 @@ import UIKit
 class MyRecipesVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
+    
+    var recipeLists = ["Starters","Main Course","Desserts"]
+    var recipeList = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,10 +26,11 @@ class MyRecipesVC: UIViewController, UITableViewDataSource, UITableViewDelegate 
         
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return recipeLists.count
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCellWithIdentifier("MyRecipesCell", forIndexPath: indexPath) as? MyRecipesCell {
+            cell.configureRecipeCell(recipeLists[indexPath.row])
             return cell
         } else {
             return UITableViewCell()

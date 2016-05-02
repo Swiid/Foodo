@@ -17,23 +17,14 @@ class ProfileDetailVC: UIViewController {
     @IBOutlet weak var emailTextfield: UITextField!
     @IBOutlet weak var saveProfileBtn: UIButton!
     
-    @IBOutlet weak var userEditTextfields: UIStackView!
-    
-    @IBOutlet weak var usernameLbl: UILabel!
-    @IBOutlet weak var firstnameLbl: UILabel!
-    @IBOutlet weak var lastnameLbl: UILabel!
-    @IBOutlet weak var emailLbl: UILabel!
     
     
     var user: userProfile!
-    var profileRecived: LeftSideMenuVC!
+    var sideMenuTitle = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        usernameLbl.text = ""
-        firstnameLbl.text = ""
-        lastnameLbl.text = ""
         
         initObserver()
         
@@ -48,20 +39,14 @@ class ProfileDetailVC: UIViewController {
         })
     }
   
-    func showUserEditfields() {
-        userEditTextfields.hidden = false
-        saveProfileBtn.hidden = false
-    }
-    @IBAction func editBtnTapped(sender: UIButton) {
-        showUserEditfields()
-        
-    }
+    
+    
     @IBAction func attempUserEditSave(sender: AnyObject) {
         
         updateFirebaseUser()
         
     }
-    @IBAction func backBtnTapped(sender: UIButton!) {
+    @IBAction func backBtnTapped(sender: UIBarButtonItem!) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     

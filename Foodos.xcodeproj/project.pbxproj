@@ -21,12 +21,13 @@
 		00ACB6E21CD415C800793E81 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ACB6E11CD415C800793E81 /* Constants.swift */; };
 		00ACB6E41CD4161300793E81 /* MaterialButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ACB6E31CD4161300793E81 /* MaterialButton.swift */; };
 		00ACB6E61CD4163D00793E81 /* MaterialTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00ACB6E51CD4163D00793E81 /* MaterialTextField.swift */; };
+		00CF78BE1CD798D800D8E7A5 /* LeftMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF78BD1CD798D800D8E7A5 /* LeftMenuVC.swift */; };
+		00CF78C21CD7D01D00D8E7A5 /* SearchRecipeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00CF78C11CD7D01D00D8E7A5 /* SearchRecipeVC.swift */; };
 		00E290E41CD50A5E0074317F /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E290E11CD50A5E0074317F /* Bolts.framework */; };
 		00E290E51CD50A5E0074317F /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E290E21CD50A5E0074317F /* FBSDKCoreKit.framework */; };
 		00E290E61CD50A5E0074317F /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00E290E31CD50A5E0074317F /* FBSDKLoginKit.framework */; };
 		00E290E91CD50FA70074317F /* DataServicesFirebase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E290E81CD50FA70074317F /* DataServicesFirebase.swift */; };
 		00E290EB1CD518940074317F /* HomeScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E290EA1CD518940074317F /* HomeScreenVC.swift */; };
-		00E290ED1CD523BE0074317F /* LeftSideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E290EC1CD523BE0074317F /* LeftSideMenuVC.swift */; };
 		00E290EF1CD524470074317F /* LeftMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E290EE1CD524470074317F /* LeftMenuCell.swift */; };
 		00E290F11CD526300074317F /* MaterialViewMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E290F01CD526300074317F /* MaterialViewMenuCell.swift */; };
 		00E290F71CD535C20074317F /* ProfileDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E290F61CD535C20074317F /* ProfileDetailVC.swift */; };
@@ -53,12 +54,13 @@
 		00ACB6E11CD415C800793E81 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		00ACB6E31CD4161300793E81 /* MaterialButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialButton.swift; sourceTree = "<group>"; };
 		00ACB6E51CD4163D00793E81 /* MaterialTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialTextField.swift; sourceTree = "<group>"; };
+		00CF78BD1CD798D800D8E7A5 /* LeftMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuVC.swift; sourceTree = "<group>"; };
+		00CF78C11CD7D01D00D8E7A5 /* SearchRecipeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRecipeVC.swift; sourceTree = "<group>"; };
 		00E290E11CD50A5E0074317F /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		00E290E21CD50A5E0074317F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
 		00E290E31CD50A5E0074317F /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		00E290E81CD50FA70074317F /* DataServicesFirebase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServicesFirebase.swift; sourceTree = "<group>"; };
 		00E290EA1CD518940074317F /* HomeScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeScreenVC.swift; sourceTree = "<group>"; };
-		00E290EC1CD523BE0074317F /* LeftSideMenuVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftSideMenuVC.swift; sourceTree = "<group>"; };
 		00E290EE1CD524470074317F /* LeftMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftMenuCell.swift; sourceTree = "<group>"; };
 		00E290F01CD526300074317F /* MaterialViewMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialViewMenuCell.swift; sourceTree = "<group>"; };
 		00E290F61CD535C20074317F /* ProfileDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileDetailVC.swift; sourceTree = "<group>"; };
@@ -126,8 +128,8 @@
 		003421F41CD40A60006FDE7F /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				00E290F91CD535D50074317F /* HomeVC */,
 				003421F91CD40AA4006FDE7F /* LoginVC.swift */,
+				00E290F91CD535D50074317F /* HomeVC */,
 				00E290F61CD535C20074317F /* ProfileDetailVC.swift */,
 				00E290FC1CD69C2F0074317F /* MyRecipesVC.swift */,
 			);
@@ -142,6 +144,7 @@
 				00E290EE1CD524470074317F /* LeftMenuCell.swift */,
 				00E290F01CD526300074317F /* MaterialViewMenuCell.swift */,
 				00E290FE1CD6A5290074317F /* MyRecipesCell.swift */,
+				00CF78C11CD7D01D00D8E7A5 /* SearchRecipeVC.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -196,7 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				00E290EA1CD518940074317F /* HomeScreenVC.swift */,
-				00E290EC1CD523BE0074317F /* LeftSideMenuVC.swift */,
+				00CF78BD1CD798D800D8E7A5 /* LeftMenuVC.swift */,
 			);
 			name = HomeVC;
 			sourceTree = "<group>";
@@ -352,12 +355,13 @@
 				003421E01CD40A13006FDE7F /* AppDelegate.swift in Sources */,
 				003421FA1CD40AA4006FDE7F /* LoginVC.swift in Sources */,
 				00E290FD1CD69C2F0074317F /* MyRecipesVC.swift in Sources */,
+				00CF78C21CD7D01D00D8E7A5 /* SearchRecipeVC.swift in Sources */,
 				00E290F71CD535C20074317F /* ProfileDetailVC.swift in Sources */,
 				00ACB6E21CD415C800793E81 /* Constants.swift in Sources */,
 				00ACB6E41CD4161300793E81 /* MaterialButton.swift in Sources */,
 				00E290E91CD50FA70074317F /* DataServicesFirebase.swift in Sources */,
 				00E290EF1CD524470074317F /* LeftMenuCell.swift in Sources */,
-				00E290ED1CD523BE0074317F /* LeftSideMenuVC.swift in Sources */,
+				00CF78BE1CD798D800D8E7A5 /* LeftMenuVC.swift in Sources */,
 				00E290F11CD526300074317F /* MaterialViewMenuCell.swift in Sources */,
 				00E290EB1CD518940074317F /* HomeScreenVC.swift in Sources */,
 				00E290FB1CD669A60074317F /* UserProfile.swift in Sources */,

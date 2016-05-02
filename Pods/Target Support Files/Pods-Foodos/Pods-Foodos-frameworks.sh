@@ -84,10 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
+  install_framework "Pods-Foodos/Alamofire.framework"
   install_framework "Pods-Foodos/Firebase.framework"
   install_framework "Pods-Foodos/SideMenu.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
+  install_framework "Pods-Foodos/Alamofire.framework"
   install_framework "Pods-Foodos/Firebase.framework"
   install_framework "Pods-Foodos/SideMenu.framework"
 fi

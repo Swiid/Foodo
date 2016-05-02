@@ -19,6 +19,7 @@ let SEGUE_LOGGED_IN = "loggedIn"
 let SEGUE_LEFTSIDE_MENU = "segueToLeftSideMenu"
 let SEGUE_PROFILE_DETAIL = "segueToProfileDetailVC"
 let SEGUE_MY_RECIPES = "segueToMyRecipes"
+let SEGUE_SEARCH_RECIPES = "segueToSearchRecipes"
 
 // Status codes
 let INVALID_EMAIL = -5

@@ -360,6 +360,9 @@
                     <navigationItem key="navigationItem" title="Title" id="Z1G-Nd-3jG">
                         <barButtonItem key="leftBarButtonItem" image="BackBtn" id="drV-cj-gGJ">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="backBtnTapped:" destination="7s5-N7-qQC" id="eXU-5C-DGb"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
@@ -457,7 +460,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AyT-LR-Qyd">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="200" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AyT-LR-Qyd">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                 <color key="backgroundColor" red="0.19766019570000001" green="0.19766019570000001" blue="0.19766019570000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
@@ -465,10 +468,10 @@
                                         <rect key="frame" x="0.0" y="92" width="375" height="200"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WIa-a9-5fT" id="oUn-Bf-jXi">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="199"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Starters" translatesAutoresizingMaskIntoConstraints="NO" id="Wra-2E-Jg9">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Starters" translatesAutoresizingMaskIntoConstraints="NO" id="Wra-2E-Jg9">
                                                     <rect key="frame" x="0.0" y="0.0" width="375" height="199"/>
                                                 </imageView>
                                             </subviews>
@@ -498,21 +501,24 @@
                     <navigationItem key="navigationItem" id="AD9-Ed-mh4">
                         <barButtonItem key="leftBarButtonItem" image="BackBtn" id="w6N-t4-VKE">
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="backBtnTapped:" destination="XCb-YY-WHf" id="WJC-oa-GSw"/>
+                            </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="AyT-LR-Qyd" id="JN3-FL-z2N"/>
-                        <segue destination="Z4u-JG-p03" kind="show" id="Fj4-yV-Ymf"/>
+                        <segue destination="Z4u-JG-p03" kind="presentation" identifier="segueToSearchRecipes" id="Fj4-yV-Ymf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u4p-ab-GZh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2792.5" y="72.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Search RecipeVC-->
         <scene sceneID="9ZF-9I-GKJ">
             <objects>
-                <viewController id="Z4u-JG-p03" sceneMemberID="viewController">
+                <viewController id="Z4u-JG-p03" customClass="SearchRecipeVC" customModule="Foodos" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ENr-LF-YkU"/>
                         <viewControllerLayoutGuide type="bottom" id="P0b-dA-hrx"/>
@@ -521,7 +527,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" barStyle="black" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="8aZ-2T-mJf">
+                            <searchBar contentMode="redraw" misplaced="YES" barStyle="black" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="8aZ-2T-mJf">
                                 <rect key="frame" x="0.0" y="64" width="375" height="45"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="5WI-Lp-Gcx"/>
@@ -529,11 +535,11 @@
                                 <color key="barTintColor" red="0.27450980390000002" green="0.87450980389999999" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="130" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KYG-Cj-7wm">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="130" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="KYG-Cj-7wm">
                                 <rect key="frame" x="0.0" y="109" width="375" height="558"/>
                                 <color key="backgroundColor" red="0.1553659295" green="0.1553659295" blue="0.1553659295" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="LUJ-ck-Lb6">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SearchRecipeCell" rowHeight="130" id="LUJ-ck-Lb6" customClass="SearchRecipeCell" customModule="Foodos" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LUJ-ck-Lb6" id="azC-ib-lZd">
@@ -618,6 +624,11 @@
                                                 <constraint firstItem="2Ms-VF-D6U" firstAttribute="leading" secondItem="azC-ib-lZd" secondAttribute="leading" id="h6J-4k-3tc"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="descriptionLbl" destination="0B9-0y-KHy" id="d7Y-Nm-Thd"/>
+                                            <outlet property="recipeImg" destination="rmE-zt-gdD" id="iIU-oz-lMA"/>
+                                            <outlet property="titleLbl" destination="jwx-6v-1jG" id="CRZ-5t-ryG"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -638,6 +649,9 @@
                             <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="KYG-Cj-7wm" id="Kes-3r-mNp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zAq-lZ-aBj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

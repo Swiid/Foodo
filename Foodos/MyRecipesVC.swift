@@ -36,6 +36,14 @@ class MyRecipesVC: UIViewController, UITableViewDataSource, UITableViewDelegate 
             return UITableViewCell()
         }
     }
-
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+     
+        self.recipeList = recipeLists[indexPath.row]
+        performSegueWithIdentifier(SEGUE_SEARCH_RECIPES, sender: self)
+    }
+    
+    @IBAction func backBtnTapped(sender: UIBarButtonItem) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
     
 }

@@ -12,7 +12,7 @@ class LeftMenuVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var menuTiltles = ["Profile","My Recipes"]
+    var menuTiltles = ["Profile","My Recipes","Meal Planner","Grocery List"]
     var menuTiltle = ""
 
     override func viewDidLoad() {
